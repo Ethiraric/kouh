@@ -14,6 +14,7 @@ include_directories(
 set(SRCS
   main.cpp
   TestFlatMap.cpp
+  TestFlatUnorderedSet.cpp
   TestOwningPointerMark.cpp
   TestSpinlock.cpp
 )
