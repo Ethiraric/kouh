@@ -14,8 +14,9 @@ include_directories(
 set(SRCS
   main.cpp
   TestFlatMap.cpp
+  TestSpinlock.cpp
 )
 
 #binary
 add_executable(kouh_tests ${SRCS})
-
+target_link_libraries(kouh_tests pthread)
