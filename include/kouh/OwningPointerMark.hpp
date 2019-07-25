@@ -94,11 +94,6 @@ public:
     return this->get();
   }
 
-  constexpr explicit operator bool() const noexcept
-  {
-    return this->get() != nullptr;
-  }
-
   constexpr pointer get() noexcept
   {
     return reinterpret_cast<pointer>(this->getIntptr() & ~0x1);
